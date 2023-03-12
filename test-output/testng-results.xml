@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1222841" started-at="2019-06-10T04:34:10Z" finished-at="2019-06-10T04:54:33Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1222841" started-at="2019-06-10T04:34:10Z" finished-at="2019-06-10T04:54:33Z">
+      <class name="junitRunner.Runner">
+        <test-method status="PASS" signature="setup()[pri:0, instance:junitRunner.Runner@171e916]" name="setup" is-config="true" duration-ms="175463" started-at="2019-06-10T04:34:10Z" finished-at="2019-06-10T04:37:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="login(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:junitRunner.Runner@171e916]" name="login" duration-ms="1041514" started-at="2019-06-10T04:37:11Z" description="login" data-provider="features" finished-at="2019-06-10T04:54:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[amazon scenario complete PF]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:junitRunner.Runner@171e916]" name="tearDown" is-config="true" duration-ms="11" started-at="2019-06-10T04:54:33Z" finished-at="2019-06-10T04:54:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- junitRunner.Runner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
