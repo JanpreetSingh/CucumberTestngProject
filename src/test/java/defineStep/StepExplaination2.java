@@ -1,6 +1,6 @@
 package defineStep;
 import org.openqa.selenium.WebDriver;
-import coreAction.Initialize;
+
 import coreAction.OpenAndCloseBrowser;
 import cucumber.api.java.en.Given;
 

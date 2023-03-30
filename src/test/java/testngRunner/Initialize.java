@@ -1,10 +1,9 @@
-package coreAction;
-
-import junitRunner.Runner;
+package testngRunner;
 
 import org.openqa.selenium.support.PageFactory;
 
 import pageFunctions.LoginTestPF;
+
 
 public class Initialize extends Runner{
 	

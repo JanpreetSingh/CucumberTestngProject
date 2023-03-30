@@ -2,8 +2,8 @@ package testcases;
 
 import org.testng.annotations.Test;
 
-import coreAction.Initialize;
-import junitRunner.Runner;
+import testngRunner.Initialize;
+import testngRunner.Runner;
 
 public class LoginPageTest extends Runner{
 	

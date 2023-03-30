@@ -1,12 +1,10 @@
 package defineStep;
 
-import coreAction.Initialize;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import pageElements.LoginTestPE2;
-import pageFunctions.LoginTestPF;
+import testngRunner.Initialize;
 
 public class AmazonImplementation extends Initialize{
 	
