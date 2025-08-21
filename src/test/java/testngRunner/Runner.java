@@ -5,8 +5,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import coreAction.OpenAndCloseBrowser;
 import cucumber.api.CucumberOptions;
+import cucumber.api.testng.AbstractTestNGCucumberTests;
 import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 
@@ -14,21 +14,18 @@ import cucumber.api.testng.TestNGCucumberRunner;
 
 @CucumberOptions( 
 	features = ".//src//test//resources//featureFile",
-	glue = "defineStep"
+	glue = "defineStep",
+	plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 	)
 
-public class Runner extends OpenAndCloseBrowser{
+public class Runner extends AbstractTestNGCucumberTests{
 	
 	private TestNGCucumberRunner testRunner;
 	
 	@BeforeClass
 	public void setup() throws InterruptedException{
-		/*System.setProperty("webdriver.chrome.driver","C:\\Users\\kamlesh.maurya\\Downloads\\chromedriver_win32\\chromedriver.exe");
-		System.out.println("Opening chrome browser");
-		driver = new ChromeDriver();*/
 		
 		testRunner = new TestNGCucumberRunner(Runner.class);
-		openUrl("https://www.amazon.in/");
 	}
 	
 	@Test(description="login", dataProvider = "features")
@@ -48,5 +45,6 @@ public class Runner extends OpenAndCloseBrowser{
 	{
 		testRunner.finish();
 	}
+	
 
 }

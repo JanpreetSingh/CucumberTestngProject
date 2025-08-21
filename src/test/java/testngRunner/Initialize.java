@@ -2,10 +2,11 @@ package testngRunner;
 
 import org.openqa.selenium.support.PageFactory;
 
+import coreAction.OpenAndCloseBrowser;
 import pageFunctions.LoginTestPF;
 
 
-public class Initialize extends Runner{
+public class Initialize extends OpenAndCloseBrowser{
 	
 	protected LoginTestPF lpf = new LoginTestPF(driver);
 	
